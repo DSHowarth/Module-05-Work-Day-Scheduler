@@ -9,7 +9,23 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
-  console.log(document.getElementsByClassName('time-block'));
+  $(".time-block").each(function(){
+    var slotHour = $(this).attr("id").slice(5);
+    var realHour = dayjs().format("HH");
+    console.log(slotHour);
+    if (slotHour === realHour){
+      $(this).removeClass("past");
+      $(this).addClass("present");
+    }
+    else if (slotHour > realHour){
+      console.log(realHour)
+      $(this).removeClass("past");
+      $(this).addClass("future");
+    }
+    else{
+      return;
+    }
+  });
 
   //
   // TODO: Add code to apply the past, present, or future class to each time
