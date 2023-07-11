@@ -17,7 +17,7 @@ Take any events, appointments, or dreams you'd like to track to the appropriate 
 - DayJS
 
 ## Credits
-Starter code taken from https://github.com/coding-boot-camp/crispy-octo-meme/
-Gif captured with https://github.com/NickeManarin/ScreenToGif/
-Font from https://fonts.google.com/
-Icon from https://www.fontawesome.com/
+Starter code taken from https://github.com/coding-boot-camp/crispy-octo-meme/ <br>
+Gif captured with https://github.com/NickeManarin/ScreenToGif/ <br>
+Font from https://fonts.google.com/ <br>
+Icon from https://www.fontawesome.com/ <br>
