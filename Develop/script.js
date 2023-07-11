@@ -9,7 +9,7 @@ $(function () {
     localStorage.setItem($(this).parent().attr('id'), $(this).siblings('.description').val());
   })
 
-  // Updates the color code of all timeslots when page loads, based on local time
+  // Updates the color code of all time blocks when page loads, based on local time
   $(".time-block").each(function(){
     //Take the number off the id tag, and store the current hour of the day. Convert both to numbers
     //to prevent 9 evaluating as greater than (hour) 17. No, I'm not 100% sure why that works.
@@ -30,17 +30,11 @@ $(function () {
     }
   });
 
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
-
+  //On page load, fill in stored events, if any.
   $(".description").each(function(){
-    $(this).text(localStorage.getItem($(this).attr("id")));
-
+    $(this).text(localStorage.getItem($(this).parent().attr("id")));
   })
 
-  //Function that adds current date & day of the week to the page on load
+  //On page load, write the current date and day of the week to the header
   $("#currentDay").text(dayjs().format("dddd, MMM DD YYYY"));
 });
