@@ -24,7 +24,6 @@ $(function () {
       $(this).addClass("present");
     }
     else if (blockHour > realHour){
-      console.log(realHour)
       $(this).removeClass("past");
       $(this).addClass("future");
     }
@@ -35,7 +34,9 @@ $(function () {
 
   //On page load, fill in stored events, if any.
   $(".description").each(function(){
+
     $(this).text(localStorage.getItem($(this).parent().attr("id")));
+    console.log(localStorage.getItem($(this).parent().attr("id")));
   })
 
   //On page load, write the current date and day of the week to the header

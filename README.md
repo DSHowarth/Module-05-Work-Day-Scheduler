@@ -2,6 +2,9 @@
 
 ## Description
 This is a simple planner to help you track and manage events during the workday (just from 9am-6pm). 
+
+![Gif of website functionality](./Assets/WorkScheduler.gif)
+(Example captured at 2:10pm)
 ## Usage
 Go to URL https://dshowarth.github.io/Module-05-Work-Day-Scheduler/ <br>
 Take any events, appointments, or dreams you'd like to track to the appropriate time block. Then, click the Save button on the right hand side to store it all locally for future access. 
