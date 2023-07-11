@@ -27,7 +27,7 @@
 
   <body>
     <!-- Header with a title and a section that displays the current date and time (see JS) -->
-    <header class="p-5 mb-4 bg-dark text-white">
+    <header class="p-5 mb-4 bg-dark text-white text-center">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
@@ -35,7 +35,8 @@
 
     <!-- Div that contains all of our time blocks -->
     <div class="container-fluid px-5">
-      <div id="confirmation"></div>
+      <!-- save confirmation message -->
+      <div id="confirmation" class="col-12 text-center fw-bold"></div>
 
       <!-- All time blocks contain an hour delineation, a text area for storing events, and a
       save button. It goes from 9am to 5pm (inclusive) but IDs use 24hr time to avoid issues with 

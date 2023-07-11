@@ -9,7 +9,7 @@ $(function () {
     localStorage.setItem($(this).parent().attr('id'), $(this).siblings('.description').val());
 
     //Lets user know the event has been saved successfully  
-    $('#confirmation').text('Event saved.');
+    $('#confirmation').text($(this).siblings('.hour').text() + ' event saved.');
   })
 
   // Updates the color code of all time blocks when page loads, based on local time
