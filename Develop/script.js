@@ -36,7 +36,6 @@ $(function () {
   $(".description").each(function(){
 
     $(this).text(localStorage.getItem($(this).parent().attr("id")));
-    console.log(localStorage.getItem($(this).parent().attr("id")));
   })
 
   //On page load, write the current date and day of the week to the header
