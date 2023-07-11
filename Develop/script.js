@@ -16,14 +16,14 @@ $(function () {
   $(".time-block").each(function(){
     //Take the number off the id tag, and store the current hour of the day. Convert both to numbers
     //to prevent 9 evaluating as greater than (hour) 17. No, I'm not 100% sure why that works.
-    var slotHour = parseInt($(this).attr("id").slice(5));
+    var blockHour = parseInt($(this).attr("id").slice(5));
     var realHour = parseInt(dayjs().format("HH"));
     
-    if (slotHour === realHour){
+    if (blockHour === realHour){
       $(this).removeClass("past");
       $(this).addClass("present");
     }
-    else if (slotHour > realHour){
+    else if (blockHour > realHour){
       console.log(realHour)
       $(this).removeClass("past");
       $(this).addClass("future");
